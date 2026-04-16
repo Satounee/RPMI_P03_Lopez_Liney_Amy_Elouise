@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &2468812877266929237
+--- !u!1001 &2976728724475636828
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -10,15 +10,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 455621584368360871, guid: d499856fddd73fb41ace012d13034cac, type: 3}
       propertyPath: m_Name
-      value: Card Variant
+      value: PlayerCard
       objectReference: {fileID: 0}
     - target: {fileID: 7408236812664038876, guid: d499856fddd73fb41ace012d13034cac, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.23369
+      value: -3.49213
       objectReference: {fileID: 0}
     - target: {fileID: 7408236812664038876, guid: d499856fddd73fb41ace012d13034cac, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.78246
+      value: 0.07511
       objectReference: {fileID: 0}
     - target: {fileID: 7408236812664038876, guid: d499856fddd73fb41ace012d13034cac, type: 3}
       propertyPath: m_LocalPosition.z
@@ -58,22 +58,34 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 455621584368360871, guid: d499856fddd73fb41ace012d13034cac, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 9051459103408710012}
+      addedObject: {fileID: 7054962773933103422}
   m_SourcePrefab: {fileID: 100100000, guid: d499856fddd73fb41ace012d13034cac, type: 3}
---- !u!1 &2598661997530782706 stripped
+--- !u!82 &2691503270172960222 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 870695519266294146, guid: d499856fddd73fb41ace012d13034cac, type: 3}
+  m_PrefabInstance: {fileID: 2976728724475636828}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3395087853335917051 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 455621584368360871, guid: d499856fddd73fb41ace012d13034cac, type: 3}
-  m_PrefabInstance: {fileID: 2468812877266929237}
+  m_PrefabInstance: {fileID: 2976728724475636828}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &9051459103408710012
+--- !u!114 &7054962773933103422
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2598661997530782706}
+  m_GameObject: {fileID: 3395087853335917051}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d1fcd2edc8e69847aa08508dd58c751, type: 3}
+  m_Script: {fileID: 11500000, guid: dd47516f78042de4fab9949695500e73, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyCard
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerCard
+  takeCardAS: {fileID: 2691503270172960222}
+  dropCardAS: {fileID: 7702439056308509748}
+--- !u!82 &7702439056308509748 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 4876264266443747432, guid: d499856fddd73fb41ace012d13034cac, type: 3}
+  m_PrefabInstance: {fileID: 2976728724475636828}
+  m_PrefabAsset: {fileID: 0}
